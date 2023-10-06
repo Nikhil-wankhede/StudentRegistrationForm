@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="~/Content/style.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <header>Student Registration Form</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter Your Full Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter Birth Date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter Your Email-ID" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter Mobile Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter Your Occupation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Graducation Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Roll Number</label>
+                            <input type="number" placeholder="Enter Roll Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Enrollement Number</label>
+                            <input type="number" placeholder="Enter Enrollement Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>College Name</label>
+                            <input type="text" placeholder="Enter College Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter College Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>College Start Date</label>
+                            <input type="date" placeholder="Enter Your College Start Date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>College End Date</label>
+                            <input type="date" placeholder="Enter Your College End Date" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" placeholder="Permanent or Temporary" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>House Number</label>
+                            <input type="number" placeholder="Enter House Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter Ward Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter Nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter Your District" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Landmark</label>
+                            <input type="text" placeholder="Enter Your Landmark" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Pin Code</label>
+                            <input type="number" placeholder="Enter Your Area Pin-Code" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter Your State" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Country</label>
+                            <input type="text" placeholder="Enter Your Country" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <div class="backBtn">
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Back</span>
+                    </div>
+
+                    <button class="sumbit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+    <script src="~/Scripts/script.js"></script>
+
+
+
+</body>
+</html>
